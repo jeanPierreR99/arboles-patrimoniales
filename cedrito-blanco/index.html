@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/public/logo-main.ico">
+    <title>Árbol Patrimonial "CEDRITO BLANCO" | Municipalidad Provincial de Tambopata</title>
+    <meta name="description"
+        content="Árbol Patrimonial N° 003-2025-MPT-ARB.PAT. La castaña (Bertholletia excelsa), símbolo de identidad y orgullo de Madre de Dios.">
+
+    <!-- Tailwind + Flowbite -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+    <!-- Google Fonts: elegancia + selva -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to bottom, #f0fdf4, #dcfce7);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .dancing {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        /* Fondo hero con vida */
+        .hero {
+            background: linear-gradient(to bottom, rgba(5, 40, 15, 0.7), rgba(0, 80, 30, 0.9)),
+                url('/public/hero.jpg') center/cover no-repeat;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%234ade80" fill-opacity="0.15" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,170.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L0,320Z"></path></svg>') bottom/contain no-repeat;
+        }
+
+        .card-glow:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 25px 60px rgba(34, 197, 94, 0.25);
+        }
+
+        .leaf-deco {
+            position: absolute;
+            font-size: 6rem;
+            opacity: 0.1;
+            pointer-events: none;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body class="text-gray-800 overflow-x-hidden">
+
+    <header class="hero relative text-white py-40 px-6 text-center overflow-hidden">
+        <div class="leaf-deco left-10 top-20">🍃</div>
+        <div class="leaf-deco right-20 top-40" style="animation-delay: 5s;">🍃</div>
+        <div class="leaf-deco left-32 top-80" style="animation-delay: 10s;">🍃</div>
+
+        <div class="relative z-10 container mx-auto max-w-7xl">
+            <p class="text-2xl md:text-3xl font-light tracking-widest text-emerald-200 mb-4">MUNICIPALIDAD PROVINCIAL DE
+                TAMBOPATA</p>
+            <h1 class="text-6xl md:text-9xl font-black leading-none mb-6">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-300">CEDRITO
+                    BLANCO</span>
+            </h1>
+            <p class="text-4xl md:text-6xl dancing text-yellow-300 mb-6">Cedrela fissilis Vell</p>
+            <p class="text-xl md:text-2xl max-w-4xl mx-auto opacity-95 leading-relaxed">
+                Especie vulnerable de la flora silvestre • Conservación y patrimonio natural
+            </p>
+
+            <div
+                class="mt-10 inline-block px-10 py-5 bg-gradient-to-r from-amber-500 to-yellow-600 text-black font-bold text-xl rounded-full shadow-2xl border-4 border-white/30">
+                Registro Patrimonial N° 009-2025-MPT-ARB.PAT
+            </div>
+
+            <div class="mt-8 flex justify-center gap-6 text-5xl">
+                <span class="animate-bounce">🌳</span>
+                <span class="animate-bounce delay-300">🌲</span>
+                <span class="animate-bounce delay-700">🌿</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-6 bg-white">
+        <div class="container mx-auto max-w-6xl text-justify">
+
+            <h2 class="text-5xl font-bold text-emerald-700 mb-6 text-center">
+                Reconocimiento de Árbol Patrimonial
+            </h2>
+            <h2 class="text-5xl font-bold text-emerald-700 mb-6 text-center">
+                "CEDRITO BLANCO"
+            </h2>
+            <h2 class="text-xl font-bold text-emerald-700 mb-6 text-center">
+                (<em>Cedrela fissilis</em> Vell.)
+            </h2>
+            <p class="text-center leading-relaxed text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                Es patrimonial por ser una <strong>especie de flora silvestre amenazada</strong>, categorizada
+                <strong>"vulnerable"</strong> establecido mediante el Decreto Supremo N° 043-2006-AG; incluida en el
+                <strong>Apéndice II de la CITES</strong> debido a su <strong>sobreexplotación comercial</strong> y a la
+                preocupación por la <strong>disminución de sus poblaciones</strong> en su hábitat natural.
+            </p>
+
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-emerald-700 mb-3">Dimensiones</h2>
+                    <dl class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">Altura</dt>
+                            <dd class="font-medium">18.00 m</dd>
+                        </div>
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">DAP</dt>
+                            <dd class="font-medium">89.00 cm</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-emerald-700 mb-3">Coordenadas UTM</h2>
+                    <dl class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">Este (E)</dt>
+                            <dd class="font-medium" id="utm-east">478610</dd>
+                        </div>
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">Norte (N)</dt>
+                            <dd class="font-medium" id="utm-north">8607008</dd>
+                        </div>
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">Zona / Datum</dt>
+                            <dd class="font-medium text-slate-500">(no especificado)</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="md:col-span-2 bg-white p-5 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-emerald-700 mb-3">Ubicación</h2>
+                    <p class="text-sm text-slate-700 leading-relaxed">
+                        A <strong>50 m aprox.</strong> lado izquierdo ingresando por la puerta principal del
+                        <strong>cementerio general "San Martin de Porres"</strong>, <strong>Av. La Joya N° 192</strong>
+                        de la ciudad de <strong>Puerto Maldonado</strong>, distrito de <strong>Tambopata</strong>,
+                        provincia de <strong>Tambopata</strong>, departamento de <strong>Madre de Dios</strong>.
+
+                    </p>
+
+                    <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                        <p class="text-sm text-slate-500">Fecha de declaración: <span
+                                class="font-medium text-slate-700">Puerto Maldonado, 2025</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="">
+
+                <div class="leading-relaxed text-gray-700 space-y-5">
+                    <div class="float-left md:mr-4 mb-3 w-full md:w-[500px] space-y-2">
+                        <img src="/public/c-blanco1.png" alt="Árbol La Castañita"
+                            class="w-full h-[500px] shadow-lg rounded" />
+                        <p class="font-semibold text-xs text-center text-emerald-700">“Cedrito blanco” mostrando su
+                            esplendor
+                        </p>
+                    </div>
+                    <p>
+                        <b>"Cedrito blanco"</b>, es un árbol de la especie Cedrela fissilis Vell,
+                        comúnmente conocido como CEDRO, forma parte de la riqueza
+                        de nuestra flora local, su conservación biológica es crucial para
+                        desarrollar estrategias de conservación efectiva por ser una
+                        especie que se encuentra amenazada, categorizada "vulnerable"
+                        establecido mediante el Decreto Supremo N° 043-2006-AG.
+                    </p>
+                    <p>Su conservación ayuda a preservar su acervo genético, que es
+                        valioso para la biotecnología, y permite estudiar sus
+                        características para desarrollar estrategias de manejo y
+                        conservación, además de proteger su valor ecológico como
+                        proveedor de servicios ambientales y hábitat para la vida
+                        silvestre. </p>
+                    <p>
+                        <b>"Cedrito blanco"</b>, es un ejemplar representativo de la especie
+                        Cedro blanco, podemos localizarlo a 50m.aprox. lado izquierdo
+                        ingresando por la puerta principal del cementerio general “San
+                        Martin de Porres”, Av. La Joya N° 192 de la ciudad de Puerto
+                        Maldonado, distrito de Tambopata, provincia de Tambopata,
+                        departamento de Madre de Dios, en las coordenadas UTM
+                        478610 E 8607008 N.
+                    </p>
+                    <p>Este ejemplar nos permite aprender más sobre esta especie, así
+                        tenemos: </p>
+                    <p>La especie Cedrela fissilis Vell, conocida también como cedro
+                        misionero, cedro blanco, cedro del bajo, cedro de agua y cedro
+                        huasca; es un árbol nativo de América del Sur, se
+                        distribuye desde Costa Rica hasta el sur de Argentina,
+                        abarcando América Central y del Sur, con una presencia notable
+                        en la Selva Paranaense o Misionera de Argentina, Uruguay, el
+                        sur de Brasil y Paraguay.</p>
+                    <p>En Perú, se encuentra en la amazonia Nororiental incluyendo la
+                        superficie total del departamento de Loreto, y superficies
+                        parciales de los departamentos de Amazonas y San Martin.
+                        También lo ubicamos en la amazonia central, incluye la
+                        superficie total del departamento de Ucayali y superficies
+                        parciales de Huánuco, Juni y Pasco. Además, lo encontramos
+                        en la amazonia suroriental, incluye las superficies parciales de
+                        Madre de Dios, Cuzco y Puno. </p>
+                                            <div class="float-right md:ml-4 mb-3 w-full md:w-[500px] space-y-2">
+                        <img src="/public/c-blanco2.png" alt="Árbol La Castañita"
+                            class="w-full h-[500px] shadow-lg" />
+                        <p class="font-semibold text-xs text-center text-emerald-700">“Cedrito blanco” ejemplar de la
+                            especie Cedrela fissilis
+                        </p>
+                    </div>
+                    <p>Su hábitat mayormente debajo de los 1200 msnm; se le observa
+                        en ámbitos con pluviosidad elevada y constante, aunque
+                        también en sitios con una marcada estación seca; es una
+                        especie con tendencia heliófita, presente en bosques
+                        secundarios tardíos, sobre suelos arcillosos a arenosos, de
+                        fertilidad variable y bien drenados, con pedregosidad elevada.
+                        Según CITES (2019) su hábitat corresponde a Bosques
+                        semideciduos/Bosques húmedos de tierras bajas. </p>
+                    <p>El cedro blanco, es un árbol apreciado principalmente por
+                        su madera de alta calidad, que es ligera, blanda, duradera y
+                        estable, ideal para carpintería de alta calidad, mobiliario y
+                        construcción. En condición seca al aire la albura es de color
+                        crema amarillenta y el duramen rosado con tendencia a marrón
+                        rojizo, siendo la albura ligeramente más clara que el duramen.
+                        Presenta un olor ausente y sabor amargo, brillo medio, grano
+                        recto, textura media, veteado en arcos superpuestos causado
+                        por los anillos de crecimiento y el parénquima longitudinal. Sus
+                        anillos de crecimiento diferenciados por bandas claras. La
+                        madera es blanda al ser cortada por cuchilla en sentido
+                        transversal a las fibras.</p>
+                    <p>
+                        <b>"Cedrito blanco"</b>, alcanza los 18m.aprox. de altura y un
+                        diámetro de fuste de 0.90m., desconocemos su edad. Esta
+                        especie en su estado natural puede alcanzar 30m. de altura, y
+                        diámetros de 50-100 cm, con fuste cilíndrico, ramificado en el
+                        último tercio, la base del fuste recta o con raíces tablares de
+                        hasta 1 m de alto; su corteza externa agrietada profundamente
+                        fisurada con canales oscuros, color marrón claro característico,
+                        las grietas separadas 2-3 cm entre sí, a veces quebradiza. Su
+                        corteza interna es laminar de color rosada o crema con olor
+                        tenue de ajos. Presenta hojas compuestas agrupadas en el ápice
+                        de las ramitas, abultamiento entre la axila de la vena media y
+                        las venas secundarias. Sus inflorescencias en panículas largas,
+                        de 35-60 cm de longitud. Flores pequeñas y unisexuales por
+                        atrofia de uno de los sexos, de 8-10 mm de longitud, con cáliz y
+                        corola presentes. Frutos cápsulas elipsoides, comparativamente
+                        grandes entre las especies peruanas, la superficie de color
+                        marrón claro y cubierta de lenticelas blanquecinas; los frutos en
+                        forma de capsulas elipsoides, cubiertas con lenticelas y semillas
+                        aladas.
+                    </p>
+                    <img src="/public/c-blanco3.png" alt="Árbol Andrés" class="w-auto mx-auto" />
+
+                    <p>Los registros de floración sedan durante la estación seca, entre
+                        mayo-agosto; de fructificación mayormente hacia fines de esta,
+                        entre agosto-noviembre.</p>
+                    <p>Las flores de esta familia son visitadas por abejas pequeñas y
+                        mariposas, pero aún no está claro si estos insectos son legítimos
+                        polinizadores y las semillas son dispersadas por el viento.</p>
+                    <img src="/public/c-blanco4.png" alt="Árbol Andrés" class="w-auto mx-auto" />
+
+                    <p>El cedro blanco, también se valora por su olor agradable, que la
+                        hace útil en aromaterapia y repeler insectos, aunque sus flores
+                        pueden tener un olor penetrante. También es usado en la
+                        apicultura, debido a que sus flores son una fuente de alimento
+                        para las abejas.</p>
+                    <img src="/public/c-blanco5.png" alt="Árbol Andrés" class="w-auto mx-auto" />
+                    <img src="/public/c-blanco6.png" alt="Árbol Andrés" class="w-auto mx-auto" />
+
+                    <p>El Perú es un centro de diversidad del género cedrela (cedro), 10
+                        especies de cedrela están reportadas en el territorio peruano y
+                        04 de ellas se distribuyen exclusivamente en el Perú. La especie
+                        está catalogada como vulnerable en la Lista Roja de especies
+                        amenazadas debido a la explotación y fragmentación de su
+                        hábitat, ha sido incluida en el Apéndice II de la Convención
+                        CITES, desde el 28 de agosto del 2020. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-gradient-to-b from-emerald-50 to-white">
+        <div class="container mx-auto max-w-6xl">
+
+            <!-- Título general -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-emerald-700 mb-4">Cedrela fissilis</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                    Cedro blanco — especie de importancia ecológica, cultural y económica para la región de Madre de
+                    Dios.
+
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+
+                <!-- Clasificación científica -->
+                <div
+                    class="bg-emerald-500 border border-emerald-200 rounded-3xl shadow-xl p-10 backdrop-blur-sm relative overflow-hidden">
+
+                    <!-- Decoración -->
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-emerald-200 rounded-full opacity-30"></div>
+                    <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-yellow-200 rounded-full opacity-30"></div>
+
+                    <h3 class="text-3xl font-semibold text-white mb-6">Clasificación científica</h3>
+
+                    <ul class="space-y-3 text-lg text-gray-100">
+                        <li><b>Reino:</b> Plantae</li>
+                        <li><b>División:</b> Fanerógama Magnoliophyt</li>
+                        <li><b>Clase:</b> Magnoliopsida</li>
+                        <li><b>Orden:</b> Sapindales</li>
+                        <li><b>Familia:</b> Meliaceae</li>
+                        <li><b>Género:</b> Cedrela</li>
+                        <li><b>Especie:</b> Cedrela sissilis vell</li>
+                    </ul>
+                </div>
+
+                <!-- Características -->
+                <div class="bg-white shadow-xl border border-gray-200 rounded-3xl p-10 leading-relaxed">
+
+                    <h3 class="text-3xl font-semibold text-emerald-700 mb-6">Características</h3>
+
+                    <p class="text-base leading-relaxed">
+                        El cedro blanco, también se valora por su <strong>olor agradable</strong>, que la hace útil en
+                        <strong>aromaterapia</strong> y <strong>repeler insectos</strong>, aunque sus flores pueden
+                        tener un olor penetrante. También es usado en la <strong>apicultura</strong>, debido a que sus
+                        flores son una <strong>fuente de alimento para las abejas</strong>.
+                    </p>
+
+                    <p class="text-base leading-relaxed">
+                        El <strong>Perú es un centro de diversidad</strong> del género Cedrela (cedro), <strong>10
+                            especies de Cedrela</strong> están reportadas en el territorio peruano y <strong>04 de ellas
+                            se distribuyen exclusivamente en el Perú</strong>. La especie está <strong>catalogada como
+                            vulnerable</strong> en la Lista Roja de especies amenazadas debido a la <strong>explotación
+                            y fragmentación de su hábitat</strong>, ha sido incluida en el <strong>Apéndice II de la
+                            Convención CITES</strong>, desde el <strong>28 de agosto del 2020</strong>.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-12 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-xl font-semibold text-emerald-700 mb-4 tracking-tight">
+                Fuentes
+            </h2>
+
+            <div class="border-l-4 border-emerald-600 pl-4 space-y-3 text-gray-700 text-sm leading-relaxed">
+
+                <p>
+                    <b>• https://es.wikipedia.org/wiki/Swietenia_macrophylla</b>
+                </p>
+
+                <p>
+                    <b>• SERFOR. 2020. Manual para la identificación botánica de especies forestales de la Amazonía
+                        peruana.</b>
+                </p>
+
+                <p>
+                    <b>• SERFOR 2020. Estado situacional del género Cedrela en Perú.</b>
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="p-16 md:p-20 bg-emerald-700 text-white text-center">
+        <div class="container mx-auto max-w-4xl">
+
+            <h2 class="text-4xl md:text-4xl font-bold mb-6">Conservación y legado</h2>
+            <p class="text-md leading-relaxed opacity-95">
+                <strong>"Cedrito blanco"</strong> es un ejemplar representativo cuyo reconocimiento promueve la
+                <strong>conservación de especies amenazadas</strong> y el <strong>manejo sostenible</strong> de nuestros
+                bosques, siendo un patrimonio natural valioso para Madre de Dios.
+            </p>
+
+            <p class="mt-8 text-base opacity-80">
+                <em>Cedrela fissilis</em> — Patrimonio natural de Madre de Dios
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>

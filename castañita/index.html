@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/public/logo-main.ico">
+    <title>Árbol Patrimonial "LA CASTAÑITA" | Municipalidad Provincial de Tambopata</title>
+    <meta name="description"
+        content="Árbol Patrimonial N° 003-2025-MPT-ARB.PAT. La castaña (Bertholletia excelsa), símbolo de identidad y orgullo de Madre de Dios.">
+
+    <!-- Tailwind + Flowbite -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+    <!-- Google Fonts: elegancia + selva -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to bottom, #f0fdf4, #dcfce7);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .dancing {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        /* Fondo hero con vida */
+        .hero {
+            background: linear-gradient(to bottom, rgba(5, 40, 15, 0.7), rgba(0, 80, 30, 0.9)),
+                url('/public/hero.jpg') center/cover no-repeat;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%234ade80" fill-opacity="0.15" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,170.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L0,320Z"></path></svg>') bottom/contain no-repeat;
+        }
+
+        .card-glow:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 25px 60px rgba(34, 197, 94, 0.25);
+        }
+
+        .leaf-deco {
+            position: absolute;
+            font-size: 6rem;
+            opacity: 0.1;
+            pointer-events: none;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body class="text-gray-800 overflow-x-hidden">
+
+    <header class="hero relative text-white py-40 px-6 text-center overflow-hidden">
+        <div class="leaf-deco left-10 top-20">🍃</div>
+        <div class="leaf-deco right-20 top-40" style="animation-delay: 5s;">🍃</div>
+        <div class="leaf-deco left-32 top-80" style="animation-delay: 10s;">🍃</div>
+
+        <div class="relative z-10 container mx-auto max-w-7xl">
+            <p class="text-2xl md:text-3xl font-light tracking-widest text-emerald-200 mb-4">MUNICIPALIDAD PROVINCIAL DE
+                TAMBOPATA</p>
+            <h1 class="text-6xl md:text-9xl font-black leading-none mb-6">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-300">LA
+                    CASTAÑITA</span>
+            </h1>
+            <p class="text-4xl md:text-6xl dancing text-yellow-300 mb-6">La Castaña Amazónica</p>
+            <p class="text-xl md:text-2xl max-w-4xl mx-auto opacity-95 leading-relaxed">
+                Símbolo de identidad, pertenencia y orgullo de Madre de Dios • Joya de la biodiversidad amazónica
+            </p>
+
+            <div
+                class="mt-10 inline-block px-10 py-5 bg-gradient-to-r from-amber-500 to-yellow-600 text-black font-bold text-xl rounded-full shadow-2xl border-4 border-white/30">
+                Registro Patrimonial N° 003-2025-MPT-ARB.PAT
+            </div>
+
+            <div class="mt-8 flex justify-center gap-6 text-5xl">
+                <span class="animate-bounce">🌳</span>
+                <span class="animate-bounce delay-300">🌰</span>
+                <span class="animate-bounce delay-700">🌿</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-6 bg-white">
+        <div class="container mx-auto max-w-6xl text-justify">
+
+            <h2 class="text-5xl font-bold text-emerald-700 mb-6 text-center">
+                Reconocimiento de Árbol Patrimonial
+            </h2>
+            <h2 class="text-5xl font-bold text-emerald-700 mb-6 text-center">
+                "La Castañita"
+            </h2>
+            <h2 class="text-xl font-bold text-emerald-700 mb-6 text-center">
+                (Bertholletia excelsa HUMB. & BONPL.)
+            </h2>
+            <p class="text-center leading-relaxed text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                Es patrimonial por ser <b>símbolo de identidad, pertenencia y orgullo</b> de la región de Madre de Dios,
+                única en todo el Perú. Es vital para la biodiversidad amazónica, proporciona alimento y hábitat para
+                otras especies, además de ser una fuente de ingresos sostenible para comunidades locales. Su categoría
+                de "vulnerable" por la deforestación resalta aún más su estatus patrimonial.
+            </p>
+
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-emerald-700 mb-3">Dimensiones</h2>
+                    <dl class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">Altura</dt>
+                            <dd class="font-medium">23.00 m</dd>
+                        </div>
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">DAP</dt>
+                            <dd class="font-medium">66.00 cm</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-emerald-700 mb-3">Coordenadas UTM</h2>
+                    <dl class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">Este (E)</dt>
+                            <dd class="font-medium" id="utm-east">480605</dd>
+                        </div>
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">Norte (N)</dt>
+                            <dd class="font-medium" id="utm-north">8607839</dd>
+                        </div>
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">Zona / Datum</dt>
+                            <dd class="font-medium text-slate-500">(no especificado)</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="md:col-span-2 bg-white p-5 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-emerald-700 mb-3">Ubicación</h2>
+                    <p class="text-sm text-slate-700 leading-relaxed">
+                        Frente a la <strong>Comisaria Puerto Maldonado</strong>, altura de la <strong>cuarta
+                            cuadra</strong>
+                        del <strong>Jr. Daniel Alcides Carrión</strong>, en la ciudad de <strong>Puerto
+                            Maldonado</strong>,
+                        distrito de <strong>Tambopata</strong>, provincia de <strong>Tambopata</strong>, departamento de
+                        <strong>Madre de Dios</strong>.
+                    </p>
+
+                    <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                        <p class="text-sm text-slate-500">Fecha de declaración: <span
+                                class="font-medium text-slate-700">Puerto Maldonado, 2025</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="">
+
+                <div class="leading-relaxed text-gray-700 space-y-5">
+                    <div class="float-left md:mr-4 mb-3 w-full md:w-[500px] space-y-2">
+                        <img src="/public/castaña1.png" alt="Árbol La Castañita"
+                            class="w-full h-[500px] shadow-lg rounded-xl" />
+                        <p class="font-semibold text-xs text-center text-emerald-700">LA CASTAÑITA, ejemplar de la
+                            especie Bertholletia excelsa,
+                            mostrando su serena majestuosidad</p>
+
+                    </div>
+                    <p>
+                        <b>"La Castañita"</b>, ejemplar representativo de la especie Bertholletia excelsa, símbolo de
+                        identidad y armonía con la naturaleza, se encuentra ubicada frente a la Comisaria Puerto
+                        Maldonado, en la ciudad de Puerto Maldonado, distrito de Tambopata, provincia de Tambopata,
+                        departamento de Madre de Dios.
+                    </p>
+
+                    <p>
+                        Los ejemplares longevos de esta especie son testimonio vivo de cómo los habitantes de Madre de
+                        Dios
+                        aprendieron a vivir en equilibrio con el ambiente; es única en el departamento de Madre de Dios
+                        y
+                        en todo el Perú.
+                    </p>
+
+                    <p>
+                        <b>"La Castañita"</b>, es un árbol comúnmente conocido como Castaña, su presencia nos cuenta la
+                        historia de sus orígenes.
+                    </p>
+
+                    <p>
+                        La castaña, conocida comúnmente como nuez del Brasil, nuez amazónica o Nuez Amazónica del Perú,
+                        avellana del Brasil, castaña del Brasil, coquito de Brasil, nuez amazónica, nuez boliviana,
+                        castaña de Pará o castaña de monte; pasó a conocerse mundialmente como "nuez de Brasil" debido a
+                        que Brasil siempre fue uno de los principales exportadores de sus semillas.
+                    </p>
+
+                    <p>
+                        La Bertholletia excelsa fue descubierta por Humboldt y Bonpland a orillas del río Orinoco
+                        (Venezuela)
+                        en 1808, desde ese entonces era utilizada por pueblos indígenas de la amazonia.
+                    </p>
+
+                    <p>
+                        Fue en los años treinta (1930), cuando se inicia la recolección de castaña con fines comerciales
+                        en el
+                        Perú a consecuencia del declive de la shiringa (caucho); no existía un mercado formal para la
+                        castaña,
+                        ni empresas que se dedicaban a su comercialización.
+                    </p>
+
+                    <p>
+                        A finales de la década de los cuarenta (1940), se otorgaron los primeros contratos de hasta
+                        10,000 has.
+                        para el aprovechamiento de la castaña e impulsar su comercio, con ello también aparecen empresas
+                        acopiadoras que entregaban habilitos, que eran pequeños montos de dinero que entregaban las
+                        empresas
+                        acopiadoras a los castañeros para asegurar la recolección y compra de las semillas de castaña.
+                    </p>
+
+                    <p>
+                        A principios de los años cincuenta (1950) se empieza a pelar semillas de castaña en las casas de
+                        las
+                        familias, para ello las empresas empezaron a repartir las máquinas de pelar y castaña en
+                        cascara, para
+                        después de dos días recoger castaña pelada. Con el transcurrir de los años se exporto semillas
+                        de
+                        castaña pelada a la ciudad de Manaus (Estado de Amazonas, Brazil) y otros lotes de castaña
+                        pelada fueron
+                        llevados a Lima.
+                    </p>
+
+                    <p>
+                        En los años sesenta (1960) con la construcción del aeropuerto de Puerto Maldonado se inicia los
+                        envíos
+                        de castaña por vía aérea hasta Quincemil, posteriormente hasta Cuzco y luego a Lima por vía
+                        terrestre.
+                        Consecuentemente las empresas empezaron a construir las plantas de procesamiento de castaña,
+                        utilizando
+                        mayormente mujeres para el pelado de la castaña.
+                    </p>
+
+                    <p>
+                        A partir del año 1975, aparecieron las empresas procesadoras y exportadoras de castaña, siendo
+                        tres
+                        empresas las que controlaban el mercado regional.
+                    </p>
+
+                    <p>
+                        Ya en el año 1993, luego de una fuerte caída en los precios de la castaña, desaparecen muchas
+                        empresas,
+                        pero entre las que quedaron optaron por realizar el pelado de la castaña en diferentes espacios
+                        físicos,
+                        tales como en el bosque, casas, galpones, y plantas de procesamiento, con el fin de implementar
+                        la
+                        automatización industrial en el pelado de castaña, abaratando así los costos de producción.
+                    </p>
+
+                    <p>
+                        En el año 2000 hasta 2005, con la promulgación de la Ley Forestal y de Fauna Silvestre N°27308,
+                        se
+                        entrega a los castañeros extensiones de bosque bajo la modalidad de concesiones hasta por 40
+                        años,
+                        implementando así el aprovechamiento de castaña bajo el manejo sostenible, estableciéndose
+                        planes de
+                        manejo. En el transcurrir de los años, los castañeros se empiezan a organizar en asociaciones
+                        como
+                        ASCART, ASECAMD, FEDECAMD, RONAP, entre otras, para gestionar y negociar los precios y calidad
+                        de la
+                        castaña.
+                    </p>
+
+                    <p>
+                        En este importante proceso surgieron las siguientes organizaciones pioneras: Candela Perú con
+                        certificación orgánica desde 2001, RONAP ostento la certificación del sello FLO 2004, y ASCART
+                        ostenta
+                        la certificación para el manejo forestal bajo el sello FSC en el 2004 y la certificación
+                        orgánica en
+                        alianza con Fast Trade en el 2005.
+                    </p>
+
+                    <p>
+                        Se consolida el sector exportador y se sigue conformando empresas procesadoras de exportación de
+                        castaña,
+                        se empieza a reconocer que es primordial atender los requerimientos del mercado. Es por ello que
+                        los
+                        castañeros empiezan a informarse cada vez más sobre aspectos de calidad de la castaña y sobre
+                        los
+                        diferentes sellos de certificación con el fin de asegurar la comercialización de las semillas de
+                        castaña.
+                    </p>
+
+                    <p>
+                        Por otro lado, se reafirmó la prohibición de la tala y quema de árboles de castaña en el Perú
+                        mediante
+                        Decreto Supremo N° 044-2002-AG, norma que busca proteger la flora silvestre, así como preservar
+                        la
+                        biodiversidad y el ecosistema en general. Además, esta norma precisa que se mantienen las
+                        condiciones
+                        que generaron la declaración de veda indefinida para la tala y quema de árboles de castaña
+                        (Bertholletia
+                        excelsa), mediante Resolución Ministerial Nº 00729-81-AG-DGFF.
+                    </p>
+
+                    <p>
+                        Actualmente los castañeros siguen ofertando sus productos al mejor postor, viene manejando sus
+                        extensiones de castaña a través de planes de manejo forestal, implementando el DEMA (Declaración
+                        de
+                        Manejo) para el caso de aquellos que solo realizan el aprovechamiento de castaña y el PMFI (Plan
+                        de
+                        Manejo Forestal Intermedio) para el caso del castañero que aprovecha madera y castaña.
+                    </p>
+
+                    <p>
+                        <b>"La Castañita"</b>, es un árbol que alcanza 23m. de altura y un
+                        diámetro de tronco de 66cm.; según bibliografía este recurso
+                        forestal alcanza los 50 m de altura y con un tronco de 1 a 2 m
+                        de diámetro, haciéndolo uno de los árboles más grandes de la
+                        selva amazónica. Tiene un tiempo de vida promedio de 500 años,
+                        se han encontrado árboles de hasta 1200 años de antigüedad.
+                        Su tronco es recto, de corteza grisácea y lisa, comúnmente no
+                        tiene ramas por más de la mitad de la altura del árbol. Las hojas
+                        son secas, caducas, alternas, simples, oblongas, de 20 a 35 cm
+                        de largo y de 10 a 15 cm de ancho. Las flores son reducidas, de
+                        color blanco verdoso, en panículas 5 a 10 cm de largo; cada flor
+                        tiene una hoja caduca de dos partes cáliz, seis pétalos
+                        desiguales de color crema, y gran número de estambres unidos
+                        en una masa ancha en forma de capucha. Las abejas Eulaema
+                        mocsaryi y Xylocopa frontalis son los principales polinizadores
+                        de la castaña.
+                    </p>
+                <img src="/public/castaña2.png" alt="Árbol Andrés" class="w-auto mx-auto" />
+
+
+                    <p>Los frutos que contiene las castañas tienen forma redondeada;
+                        piel lisa, tamaño similar a un coco y un peso de 2 Kg; cuando
+                        está madura cae al suelo y en su interior se pueden encontrar
+                        hasta 20 nueces. Cada nuez tiene forma de media luna; una
+                        fina piel que la recubre como las almendras y dentro es blanco,
+                        mantecoso y muy rico.</p>
+                <img src="/public/castaña3.png" alt="Árbol Andrés" class="w-auto mx-auto" />
+
+                    <p>
+                        Roedores o cerdos silvestres (sajinos o huanganas) consumen el
+                        fruto, el más importante es el añuje (Dasyprocta variegata) quien
+                        devora gran parte de las nueces y pacientemente oculta una a
+                        una las semillas restantes en los alrededores del árbol, no
+                        consumen todas las nueces que esconden, lo cual favorece la
+                        regeneración natural de la castaña.
+                    </p>
+
+                    <p>
+                        La recolección de los frutos caídos se realiza por los castañeros
+                        en forma manual con ayuda de un canasto y una payana (palo
+                        con tres puntas) en los meses de diciembre a marzo. Una vez
+                        recolectados son juntados y posterior son abiertos y extraídas
+                        las semillas, las que se secan y pelan para su posterior venta.
+                        Son trasladados por vía fluvial o terrestre a los mercados de
+                        Puerto Maldonado, o directamente en el campo, a los
+                        acopiadores y comerciantes mayoristas
+                    </p>
+                <img src="/public/castaña4.png" alt="Árbol Andrés" class="w-auto mx-auto" />
+
+                    <p>
+                        Los árboles de castaña, se encuentra de manera dispersa o en
+                        grupos de hasta 100 ejemplares sobre suelos bien drenados. La
+                        presencia de esta especie forestal se ve amenazada por
+                        actividades antropogénicas como la deforestación, la
+                        degradación de suelos y la disminución de las poblaciones
+                        naturales. Estas actividades vienen generando la destrucción
+                        sistémica de los bosques para ser sustituidos por agricultura
+                        migratoria de baja producción y pasturas para la actividad
+                        pecuaria extensiva; modelo equivocado que genera la reducción
+                        de castañales nativos que ponen en riesgo el valioso material
+                        genético que por décadas ha sido el sustento de las familias
+                        locales.
+                    </p>
+
+                    <p>
+                        Diversos estudios científicos, efectuados en algunas áreas
+                        naturales protegidas adyacentes a la zona castañera (como
+                        Manu y Tambopata) demostraron que los bosques de castaña,
+                        albergan a más especies de plantas y animales que ningún otro
+                        lugar en el mundo como la nutria, el jaguar, el puma, el tapir de
+                        tierras bajas y el oso hormiguero gigante.
+                    </p>
+
+                    <p>
+                        Desde la finalización de la construcción de la carretera
+                        Interoceánica Sur entre Perú y Brasil en 2009, la migración de
+                        pobladores andinos en busca de aprovechar los recursos
+                        naturales del bosque (madera, oro aluvial) ha causado que el
+                        ritmo de deforestación se multiplique por 4 en la región de Madre
+                        de Dios (Ministerio del Ambiente – MINAM), afectando
+                        directamente los bosques de castaña.
+                    </p>
+
+                    <p>
+                        Por otro lado, algunos estudios demostraron que la cosecha
+                        continua y descontrolada de las semillas de castaña por largos
+                        períodos provocan arboledas sin árboles jóvenes, poniendo en
+                        riesgo el reemplazo de los árboles más antiguos, lo cual se
+                        podría controlar con un manejo adecuado.
+                    </p>
+                    <p>
+                        Por otro lado, con el fin de promocionar la Castaña fue declarada
+                        producto bandera de Madre de Dios con Ordenanza Regional N°
+                        017-2009-GRMDD/CR del 19 de mayo del 2009, por su
+                        importancia económica, social, ecológica y cultural, así como un
+                        producto estratégico para el desarrollo de la región.
+                    </p>
+
+                    <p>
+                        Y para reconocer y realzar la labor de los recolectores
+                        castañeros y promover su producción, comercialización e
+                        industrialización y su revaloración como recurso natural por su
+                        alto contenido nutricional, el gobierno regional emitió la
+                        Ordenanza Regional N° 005-2013-RMDD/CR el 13 de marzo de
+                        2013 institucionalizando que el segundo viernes del mes de
+                        agosto de cada año, se lleve a cabo el Festival de la Castaña,
+                        fortaleciendo así el reconocimiento de la ardua labor que
+                        cumplen los castañeros, símbolo de identidad.
+                    </p>
+
+                    <p>
+                        Así mismo, MINCETUR y DIRCETUR de Madre de Dios
+                        obtuvieron la marca colectiva denominada “Morikke” (castaña
+                        en lengua Harakbut), como marca colectiva el 18 de marzo del
+                        2019, también para tres variantes de castaña, en las siguientes
+                        clases de Indecopi: 29) Para la castaña sin cáscara, aceite y
+                        leche de castaña con fines alimenticios con Resolución N˚
+                        021441-2018/DSD-INDECOPI. 30) Para la castaña azucarada
+                        (confitería) con Resolución N˚ 021438-2018/DSD-INDECOPI y
+                        31) Para la castaña con cáscara y fresca con Resolución
+                        N˚0211439-2018/DSD-INDECOPI.
+
+                    </p>
+                    <p>
+                        La castaña, especie emblemática de Madre de Dios, seguirá
+                        siendo comercializada en el mercado local, nacional e
+                        internacional, mediante empresas ubicadas dentro y fuera del
+                        departamento. Y las instituciones públicas y privadas seguirán
+                        encargándose de mejorar la rentabilidad y hacer de esta
+                        actividad una opción productiva sustentable ecológica, social y
+                        económica.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-gradient-to-b from-emerald-50 to-white">
+        <div class="container mx-auto max-w-6xl">
+
+            <!-- Título general -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-emerald-700 mb-4">Bertholletia excelsa</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                    La castaña amazónica, una especie de gran importancia alimentaria, cultural, ecológica y económica
+                    para la región de Madre de Dios.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+
+                <!-- Clasificación científica -->
+                <div
+                    class="bg-emerald-500 border border-emerald-200 rounded-3xl shadow-xl p-10 backdrop-blur-sm relative overflow-hidden">
+
+                    <!-- Decoración -->
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-emerald-200 rounded-full opacity-30"></div>
+                    <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-yellow-200 rounded-full opacity-30"></div>
+
+                    <h3 class="text-3xl font-semibold text-white mb-6">Clasificación científica</h3>
+
+                    <ul class="space-y-3 text-lg text-gray-100">
+                        <li><b>División:</b> Magnoliophyta</li>
+                        <li><b>Clase:</b> Magnoliopsida</li>
+                        <li><b>Subclase:</b> Dilleniidae</li>
+                        <li><b>Orden:</b> Ericales</li>
+                        <li><b>Familia:</b> Lecythidaceae</li>
+                        <li><b>Subfamilia:</b> Lecythidoideae</li>
+                        <li><b>Tribu:</b> Chenopodieae</li>
+                        <li><b>Género:</b> Bertholletia</li>
+                        <li><b>Especie:</b> Bertholletia excelsa</li>
+                    </ul>
+                </div>
+
+                <!-- Características -->
+                <div class="bg-white shadow-xl border border-gray-200 rounded-3xl p-10 leading-relaxed">
+
+                    <h3 class="text-3xl font-semibold text-emerald-700 mb-6">Características</h3>
+
+                    <p class="text-gray-700 mb-4">
+                        La castaña es un árbol de la familia Lecythidaceae, nativo de Sudamérica, propio de la Amazonia,
+                        específicamente de Bolivia, Brasil, el sudeste de Colombia, Guyana, Perú y el sur de Venezuela.
+                        Crece
+                        con majestuosidad especialmente en las provincias de Tambopata y Tahuamanu de nuestro
+                        departamento de
+                        Madre de Dios.
+                    </p>
+
+                    <p class="text-gray-700 mb-4">
+                        Tiene un tronco recto, de corteza grisácea y lisa, comúnmente no tiene ramas por más de la mitad
+                        de la
+                        altura del árbol. Las hojas son secas, caducas, alternas, simples, oblongas, de 20 a 35 cm de
+                        largo y
+                        de 10 a 15 cm de ancho.
+                    </p>
+
+                    <p class="text-gray-700 mb-4">
+                        Los frutos contienen las castañas con forma redondeada; piel lisa, tamaño similar a un coco y un
+                        peso
+                        de 2 Kg; cuando está madura cae al suelo y en su interior se pueden encontrar hasta 20 nueces.
+                        Cada nuez
+                        tiene forma de media luna; una fina piel que la recubre como las almendras y dentro es blanco,
+                        mantecoso
+                        y muy rico.
+                    </p>
+
+                    <p class="text-gray-700 mb-4">
+                        Es más nutritiva que la castaña de Brasil y Bolivia, superior en carbohidratos, vitamina E y B;
+                        antioxidantes y minerales como selenio, magnesio y potasio; fibras y proteínas sin calorías.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-12 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-xl font-semibold text-emerald-700 mb-4 tracking-tight">
+                Fuentes
+            </h2>
+
+            <div class="border-l-4 border-emerald-600 pl-4 space-y-3 text-gray-700 text-sm leading-relaxed">
+
+                <p>
+                    <b>• https://www.bosques-amazonicos.com/blog/redd-castaneros-madre-de-dios/</b>
+                </p>
+
+                <p>
+                    <b>• https://foods.pe/la-castana/</b>
+                </p>
+
+                <p>
+                    <b>• Motta Maués 2002; Cavalcante et al. 2012</b>
+                </p>
+
+                <p>
+                    <b>• Ministerio de Ambiente 2014</b>
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="p-20 bg-emerald-700 text-white text-center">
+        <div class="container mx-auto max-w-4xl">
+
+            <h2 class="text-4xl font-bold mb-6">Un legado que perdura</h2>
+            <p class="text-lg leading-relaxed opacity-90">
+                "La Castañita" continúa en pie como símbolo de identidad, pertenencia y orgullo de la región de Madre
+                de Dios, testimonio vivo de cómo sus habitantes aprendieron a vivir en equilibrio con el ambiente
+                amazónico, y fuente vital de ingresos sostenible para las comunidades locales.
+            </p>
+
+            <p class="mt-6 text-sm opacity-80">
+                Especie emblemática única en todo el Perú • Joya de la biodiversidad amazónica
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>

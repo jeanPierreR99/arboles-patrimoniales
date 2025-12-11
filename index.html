@@ -1,166 +1,184 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/svg+xml" href="/public/logo-main.ico">
 
-    <title>Arboles Patrimoniales | MPT</title>
-    <link rel="icon" type="image/png" href="logo-main.ico" />
+    <title>Árboles Patrimoniales | MPT</title>
+    <link rel="icon" type="image/png" href="/public/logo-main.ico" />
 
-    <!-- TailwindCSS CDN -->
+    <!-- TailwindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-gray-50 text-gray-800">
 
-    <header class="py-10 text-center">
-        <h1 class="text-4xl font-bold text-emerald-700">Lista de Árboles</h1>
-        <p class="text-gray-600 mt-2">Selecciona un árbol para ver más información</p>
-    </header>
+    <!-- HERO -->
+    <!-- HERO CON IMAGEN DE FONDO -->
+    <section class="relative h-[420px] md:h-[520px] w-full overflow-hidden">
 
-<main class="container mx-auto px-6 pb-20">
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Imagen de fondo -->
+        <div class="absolute inset-0">
+            <img src="/public/hero.jpg" alt="Bosque de Tambopata"
+                class="w-full h-full object-cover object-center brightness-75" />
+        </div>
 
-        <!-- ITEM 1 - ANNITA -->
-        <a href="/annita"
-           class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-            <img src="/public/annita2.png" alt="Árbol patrimonial Annita"
-                 class="h-48 w-full object-cover" />
-            <div class="p-5">
-                <h3 class="text-xl font-semibold text-emerald-700">ANNITA</h3>
-                <p class="text-sm text-gray-600">
-                    Especie amazónica de gran porte, apreciada por su papel en la biodiversidad local.
-                </p>
-            </div>
-        </a>
+        <!-- Capa de gradiente -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-black/20"></div>
 
-        <!-- ITEM 2 - EL TAYTA -->
-        <a href="/tayta"
-           class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-            <img src="/public/tayta1.png" alt="Árbol patrimonial El Tayta"
-                 class="h-48 w-full object-cover" />
-            <div class="p-5">
-                <h3 class="text-xl font-semibold text-emerald-700">EL TAYTA</h3>
-                <p class="text-sm text-gray-600">
-                    Árbol emblemático de la Amazonía, símbolo de sabiduría y resistencia natural.
-                </p>
-            </div>
-        </a>
+        <!-- Contenido del Hero -->
+        <div class="relative z-10 flex flex-col items-center justify-center text-center h-full px-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-xl">
+                Árboles Patrimoniales
+            </h1>
 
-        <!-- ITEM 3 - ANDRES -->
-        <a href="/andres"
-           class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-            <img src="/public/andres1.png" alt="Árbol patrimonial Andrés"
-                 class="h-48 w-full object-cover" />
-            <div class="p-5">
-                <h3 class="text-xl font-semibold text-emerald-700">ANDRES</h3>
-                <p class="text-sm text-gray-600">
-                    Maderable valorado y protegido por su importancia ecológica y económica.
-                </p>
-            </div>
-        </a>
+            <p class="mt-4 text-lg md:text-xl text-gray-200 max-w-2xl drop-shadow">
+                Protección, identidad y legado natural de Tambopata.
+                Descubre los árboles que forman parte de nuestro patrimonio vivo.
+            </p>
+        </div>
+    </section>
 
-        <!-- ITEM 4 - LA CASTAÑITA -->
-        <a href="/castañita"
-           class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-            <img src="/public/castaña1.png" alt="Árbol patrimonial La Castañita"
-                 class="h-48 w-full object-cover" />
-            <div class="p-5">
-                <h3 class="text-xl font-semibold text-emerald-700">LA CASTAÑITA</h3>
-                <p class="text-sm text-gray-600">
-                    Árbol patrimonial de la especie <em>Bertholletia excelsa</em>, valorado por su aceite y biodiversidad asociada.
-                </p>
-            </div>
-        </a>
+    <!-- LISTADO -->
+    <main class="container mx-auto px-6 py-16">
 
-        <!-- ITEM 5 - CEDRITO BLANCO -->
-        <a href="/cedrito-blanco"
-           class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-            <img src="https://picsum.photos/400?random=5"
-                 alt="Árbol patrimonial Cedrito Blanco"
-                 class="h-48 w-full object-cover" />
-            <div class="p-5">
-                <h3 class="text-xl font-semibold text-emerald-700">CEDRITO BLANCO</h3>
-                <p class="text-sm text-gray-600">
-                    Especie de gran tamaño, destacada por la calidad de su madera y su rol en el bosque.
-                </p>
-            </div>
-        </a>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-        <!-- ITEM 6 - CEDRITO COLORADO -->
-        <a href="/cedrito-colorado"
-           class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-            <img src="https://picsum.photos/400?random=6"
-                 alt="Árbol patrimonial Cedrito Colorado"
-                 class="h-48 w-full object-cover" />
-            <div class="p-5">
-                <h3 class="text-xl font-semibold text-emerald-700">CEDRITO COLORADO</h3>
-                <p class="text-sm text-gray-600">
-                    Árbol amazónico valorado por su madera rojiza y su aporte a los ecosistemas.
-                </p>
-            </div>
-        </a>
+            <!-- REUSAR ESTE ESTILO PARA TODAS LAS TARJETAS -->
+            <a href="/annita"
+                class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="/public/annita2.png"
+                    class="h-[360px] w-full object-cover group-hover:scale-[1.03] transition" />
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-emerald-700">ANNITA</h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                        Es un árbol monumental que destaca por su antigüedad excepcional, con más de mil cien años de
+                        existencia, y por su imponente presencia dentro del bosque </p>
+                </div>
+            </a>
 
-        <!-- ITEM 7 - INCANUS -->
-        <a href="/incanus"
-           class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-            <img src="https://picsum.photos/400?random=7"
-                 alt="Árbol patrimonial Incanus"
-                 class="h-48 w-full object-cover" />
-            <div class="p-5">
-                <h3 class="text-xl font-semibold text-emerald-700">INCANUS</h3>
-                <p class="text-sm text-gray-600">
-                    Maderable fino que se encuentra en estado vulnerable, requiere protección activa.
-                </p>
-            </div>
-        </a>
+            <a href="/tayta"
+                class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="/public/tayta1.png"
+                    class="h-[360px] w-full object-cover group-hover:scale-[1.03] transition" />
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-emerald-700">EL TAYTA</h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                        Es un árbol ancestral con más de mil cien años de edad, considerado un “monumento viviente” por
+                        su grandeza y relevancia ecológica.
+                    </p>
+                </div>
+            </a>
 
-        <!-- ITEM 8 - MARQAY -->
-        <a href="/marqay"
-           class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-            <img src="https://picsum.photos/400?random=8"
-                 alt="Árbol patrimonial Marqay"
-                 class="h-48 w-full object-cover" />
-            <div class="p-5">
-                <h3 class="text-xl font-semibold text-emerald-700">MARQAY</h3>
-                <p class="text-sm text-gray-600">
-                    Árbol de aroma agradable, utilizado tradicionalmente para aceites y fragancias.
-                </p>
-            </div>
-        </a>
+            <a href="/andres"
+                class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="/public/andres1.png"
+                    class="h-[360px] w-full object-cover group-hover:scale-[1.03] transition" />
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-emerald-700">ANDRÉS</h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                        El árbol de mango presenta hojas alternas, simples, coriáceas, de lanceoladas a oblongas, de
+                        15-30 cm de longitud, de color verde oscuro, inflorescencias en panículas axilares o terminales.
+                    </p>
+                </div>
+            </a>
 
-        <!-- ITEM 9 - NEGRITA -->
-        <a href="/negrita"
-           class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-            <img src="https://picsum.photos/400?random=9"
-                 alt="Árbol patrimonial Negrita"
-                 class="h-48 w-full object-cover" />
-            <div class="p-5">
-                <h3 class="text-xl font-semibold text-emerald-700">NEGRITA</h3>
-                <p class="text-sm text-gray-600">
-                    Especie resistente y longeva, esencial en la regeneración del bosque amazónico.
-                </p>
-            </div>
-        </a>
+            <a href="/castañita"
+                class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="/public/castaña1.png"
+                    class="h-[360px] w-full object-cover group-hover:scale-[1.03] transition" />
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-emerald-700">LA CASTAÑITA</h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                        La castaña es un árbol de la familia Lecythidaceae, nativo de Sudamérica, propio de la Amazonia,
+                        específicamente de Bolivia, Brasil, el sudeste de Colombia, Guyana, Perú y el sur de Venezuela.
+                    </p>
+                </div>
+            </a>
 
-        <!-- ITEM 10 - VIEJO MANGO -->
-        <a href="/viejo-mango"
-           class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-            <img src="https://picsum.photos/400?random=10"
-                 alt="Árbol patrimonial Viejo Mango"
-                 class="h-48 w-full object-cover" />
-            <div class="p-5">
-                <h3 class="text-xl font-semibold text-emerald-700">VIEJO MANGO</h3>
-                <p class="text-sm text-gray-600">
-                    Árbol frutal histórico, asociado a la cultura y alimentación de la región.
-                </p>
-            </div>
-        </a>
+            <a href="/cedrito-blanco"
+                class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="/public/c-blanco1.png"
+                    class="h-[360px] w-full object-cover group-hover:scale-[1.03] transition" />
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-emerald-700">CEDRITO BLANCO</h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                        El cedro blanco, también se valora por su olor agradable, que la hace útil en aromaterapia y
+                        repeler insectos, aunque sus flores pueden tener un olor penetrante. </p>
+                </div>
+            </a>
 
-    </div>
-</main>
+            <a href="/cedrito-colorado"
+                class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="/public/c-colorado1.png"
+                    class="h-[360px] w-full object-cover group-hover:scale-[1.03] transition" />
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-emerald-700">CEDRITO COLORADO</h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                        Es un árbol joven que aún se encuentra en sus primeras etapas de crecimiento. </p>
+                </div>
+            </a>
 
+            <a href="/incanus"
+                class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="/public/incanus3.png"
+                    class="h-[360px] w-full object-cover group-hover:scale-[1.03] transition" />
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-emerald-700">INCANUS</h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                        La inclusión de especies Handroanthus incanus en el Apéndice II de la CITES se debe a la
+                        necesidad de regular el comercio internacional para prevenir una explotación insostenible </p>
+                </div>
+            </a>
+
+            <a href="/marqay"
+                class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="/public/marqay1.png"
+                    class="h-[360px] w-full object-cover group-hover:scale-[1.03] transition" />
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-emerald-700">EL MARQAY</h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                        Es un árbol de gran porte que destaca por su impresionante tamaño y por inspirar admiración en
+                        la zona. Presenta una altura aproximada de 36 m y un DAP de 20 m </p>
+                </div>
+            </a>
+
+            <a href="/negrita"
+                class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="/public/negrita1.png"
+                    class="h-[360px] w-full object-cover group-hover:scale-[1.03] transition" />
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-emerald-700">LA NEGRITA</h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                        Es un ejemplar de Copaiba paupera, conocido por la población como copaiba negra. Alcanza una
+                        altura aproximada de 7 m y presenta un DAP de 30.24 cm. </p>
+                </div>
+            </a>
+
+            <a href="/viejo-mango"
+                class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="/public/viejo-mango1.png"
+                    class="h-[360px] w-full object-cover group-hover:scale-[1.03] transition" />
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-emerald-700">EL VIEJO MANGO</h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                        Es un árbol centenario que destaca por su majestuosa presencia y su importancia histórica para
+                        Puerto Maldonado. </p>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-emerald-700 text-white py-10 mt-20">
+        <div class="container mx-auto px-6 text-center text-sm opacity-90">
+            Municipalidad Provincial de Tambopata — Madre de Dios, Perú<br>
+            © 2025 Todos los derechos reservados.
+        </div>
+    </footer>
 
 </body>
+
 </html>

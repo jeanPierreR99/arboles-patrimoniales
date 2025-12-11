@@ -1,11 +1,466 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/svg+xml" href="/public/logo-main.ico">
+    <title>Árbol Patrimonial "EL MARQAY" | Municipalidad Provincial de Tambopata</title>
+    <meta name="description"
+        content="Árbol Patrimonial N° 003-2025-MPT-ARB.PAT. La castaña (Bertholletia excelsa), símbolo de identidad y orgullo de Madre de Dios.">
+
+    <!-- Tailwind + Flowbite -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+    <!-- Google Fonts: elegancia + selva -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to bottom, #f0fdf4, #dcfce7);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .dancing {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        /* Fondo hero con vida */
+        .hero {
+            background: linear-gradient(to bottom, rgba(5, 40, 15, 0.7), rgba(0, 80, 30, 0.9)),
+                url('/public/hero.jpg') center/cover no-repeat;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%234ade80" fill-opacity="0.15" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,170.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L0,320Z"></path></svg>') bottom/contain no-repeat;
+        }
+
+        .card-glow:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 25px 60px rgba(34, 197, 94, 0.25);
+        }
+
+        .leaf-deco {
+            position: absolute;
+            font-size: 6rem;
+            opacity: 0.1;
+            pointer-events: none;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+            }
+        }
+    </style>
 </head>
-<body>
-    MARQAY
+
+<body class="text-gray-800 overflow-x-hidden">
+
+    <header class="hero relative text-white py-40 px-6 text-center overflow-hidden">
+        <div class="leaf-deco left-10 top-20">🍃</div>
+        <div class="leaf-deco right-20 top-40" style="animation-delay: 5s;">🍃</div>
+        <div class="leaf-deco left-32 top-80" style="animation-delay: 10s;">🍃</div>
+
+        <div class="relative z-10 container mx-auto max-w-7xl">
+            <p class="text-2xl md:text-3xl font-light tracking-widest text-emerald-200 mb-4">MUNICIPALIDAD PROVINCIAL DE
+                TAMBOPATA</p>
+            <h1 class="text-6xl md:text-9xl font-black leading-none mb-6">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-300">EL
+                    MARQAY</span>
+            </h1>
+            <p class="text-4xl md:text-6xl dancing text-yellow-300 mb-6">Ficus gomelleira Kunth y C.D. Bouché</p>
+            <p class="text-xl md:text-2xl max-w-4xl mx-auto opacity-95 leading-relaxed">
+                Especie vulnerable de la flora silvestre • Conservación y patrimonio natural
+            </p>
+
+            <div
+                class="mt-10 inline-block px-10 py-5 bg-gradient-to-r from-amber-500 to-yellow-600 text-black font-bold text-xl rounded-full shadow-2xl border-4 border-white/30">
+                Registro Patrimonial N° 006-2025-MPT-ARB.PAT
+            </div>
+
+            <div class="mt-8 flex justify-center gap-6 text-5xl">
+                <span class="animate-bounce">🌳</span>
+                <span class="animate-bounce delay-300">🌲</span>
+                <span class="animate-bounce delay-700">🌿</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-6 bg-white">
+        <div class="container mx-auto max-w-6xl text-justify">
+
+            <h2 class="text-5xl font-bold text-emerald-700 mb-6 text-center">
+                Reconocimiento de Árbol Patrimonial
+            </h2>
+            <h2 class="text-5xl font-bold text-emerald-700 mb-6 text-center">
+                "EL MARQAY"
+            </h2>
+            <h2 class="text-xl font-bold text-emerald-700 mb-6 text-center">
+                (<em>Ficus gomelleira Kunth y C.D. Bouché</em>)
+            </h2>
+            <p class="text-center leading-relaxed text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                Es patrimonial por es un árbol majestuoso en tamaño que <b>inspira
+                    admiración y respeto por sus dimensiones</b>, es uno de los más altos de esta
+                especie en la zona; este ejemplar ha sido denominado <b>“El Marqay”</b>, que en
+                quechua <b>significa el abrazador</b>, porque abraza a otro árbol, lo envuelve y
+                al final ha matado al árbol del medio y ahora es un renaco gigante.
+            </p>
+
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <!-- Dimensiones -->
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-emerald-700 mb-3">Dimensiones</h2>
+                    <dl class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">Altura</dt>
+                            <dd class="font-medium">36 m</dd>
+                        </div>
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">DAP</dt>
+                            <dd class="font-medium">20 m</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <!-- Coordenadas UTM -->
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-emerald-700 mb-3">Coordenadas UTM</h2>
+                    <dl class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">Este (E)</dt>
+                            <dd class="font-medium" id="utm-east">457791</dd>
+                        </div>
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">Norte (N)</dt>
+                            <dd class="font-medium" id="utm-north">8655335</dd>
+                        </div>
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">Zona / Datum</dt>
+                            <dd class="font-medium text-slate-500">(no especificado)</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <!-- Ubicación -->
+                <div class="md:col-span-2 bg-white p-5 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-emerald-700 mb-3">Ubicación</h2>
+                    <p class="text-sm text-slate-700 leading-relaxed">
+                        En la <strong>Concesión de Conservación el Bosque de ARBIO</strong>, cuenca
+                        del <strong>río Las Piedras</strong>, distrito de
+                        <strong>Las Piedras</strong>, provincia de
+                        <strong>Tambopata</strong>, departamento de
+                        <strong>Madre de Dios</strong>.
+                    </p>
+
+                    <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                        <p class="text-sm text-slate-500">
+                            Fecha de declaración:
+                            <span class="font-medium text-slate-700">Puerto Maldonado, 2025</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="">
+
+                <div class="leading-relaxed text-gray-700 space-y-5">
+                    <div class="float-left md:mr-4 mb-3 w-full md:w-[500px] space-y-2">
+                        <img src="/public/marqay1.png" alt="Árbol La Castañita"
+                            class="w-full h-[500px] shadow-lg rounded" />
+                        <p class="font-semibold text-xs text-center text-emerald-700">“El Marqay”, Ficus gomelleira
+                            Kunth y C.D. Bouché,
+                            comúnmente conocido como Renaco
+                        </p>
+                    </div>
+                    <p>
+                        <b>"El marqay"</b>, es un árbol majestuoso en tamaño que inspira
+                        admiración y respeto por sus dimensiones, es uno de los más
+                        altos de esta especie en la zona; su conservación biológica es
+                        crucial para desarrollar estrategias de conservación efectivas,
+                        evitando así su extinción.
+                    </p>
+
+                    <p>
+                        Este ejemplar de la especie Ficus gomelleira Kunth y C.D.
+                        Bouché, comúnmente conocido como Renaco ha sido
+                        denominado <b>“El Marqay”</b>, que en quechua significa el
+                        abrazador, porque abraza a otro árbol, lo envuelve y al final ha
+                        matado al árbol del medio y ahora es un renaco gigante.
+                    </p>
+
+                    <p>
+                        <b>“El Marqay”</b>, se encuentra ubicada en la concesión de
+                        conservación El Bosque de ARBIO en la cuenca del Rio Las
+                        Piedras, en el distrito de Las Piedras, provincia de Tambopata,
+                        departamento de Madre de Dios, ubicada a 48,75 km al
+                        noroeste de Puerto Maldonado. Se parte desde Puerto
+                        Maldonado vía terrestre hasta Puerto Lucerna (2,5 horas)
+                        ubicada a orilla del río Las Piedras. Aquí se embarca y el
+                        transporte fluvial es por 1 hora. Este ejemplar se ubica en las
+                        coordenadas UTM 457791E 8655335N.
+                    </p>
+
+                    <p>
+                        <b>“El Marqay”</b>, es un ejemplar de la especie Ficus gomelleira
+                        Kunth y C.D. Bouché, su nombre "gomelleira" proviene de la
+                        resina o látex que segrega el árbol.
+                    </p>
+                    <p>
+                        Esta especie se conoce comúnmente como Renaco, árbol del
+                        caucho o gomero, Oje renaco, Oje; es nativo de varias regiones
+                        tropicales de Sudamérica incluyendo Bolivia, Brasil, Colombia,
+                        Ecuador, Perú, Surinam, Trinidad y Tobago, y Venezuela. Es un
+                        árbol característico de la Amazonía, crece en lugares húmedos
+                        o bosques inundables, como las selvas tropicales y las zonas de
+                        pantanos.
+                    </p>
+
+                    <p>
+                        <b>“El Marqay”</b>, es uno de los árboles más grandes de la zona
+                        que sobrepasa los 36m. de altura, con un diámetro de tronco de
+                        20m. a una altura de 130m, tiene una base muy grande
+                        formada por aletas gigantes, no se sabe su edad, no hay
+                        estudios de su ciclo de vida. Según bibliografía revisada, la
+                        especie Ficus gomelleira puede alcanzar entre 8 y 18 metros de
+                        altura y u diámetro de tronco de 50 a 70 cm., es por ello que se
+                        indica que <b>“El Marqay”</b> es uno de los árboles más grandes de
+                        la zona.
+                    </p>
+                    <div class="float-right md:ml-4 mb-3 w-full md:w-[500px] space-y-2">
+                        <img src="/public/marqay2.png" alt="Árbol La Castañita"
+                            class="w-full h-[500px] shadow-lg rounded" />
+                        <p class="font-semibold text-xs text-center text-emerald-700">“El Marqay”, por su gran porte,
+                            hojas brillantes y formas
+                            arqueadas
+                        </p>
+                    </div>
+                    <p>El Renaco, es un árbol semideciduo, ósea es una planta que
+                        pierde entre el 25% y el 75% de su follaje durante la estación
+                        seca; presenta una copa grande, ancha y densa. Su semilla es
+                        muy pequeña y una forma sencilla de obtenerla del árbol es
+                        recolectar los frutos y colocarlos en una bolsa de plástico,
+                        dejándolos reposar hasta que se descompongan parcialmente. </p>
+                    <img src="/public/marqay3.png" alt="Árbol La Castañita" class="h-auto w-auto mx-auto" />
+
+                    <p>
+                        Esta especie presenta una corteza con características
+                        antisifilítica, depurativa y tónica, utilizándolo para tratar
+                        dolores artríticos y reumáticos y también para lavar úlceras. Se
+                        utiliza tópicamente en forma de polvo para reducir las hernias.
+                        Su látex se recolecta en estado silvestre para uso medicinal, es
+                        vermífugo es decir tiene virtud para matar las lombrices
+                        intestinales, es especialmente eficaz contra Ancylostoma
+                        (nematodos parásitos, como la anquilostoma, que habitan en el
+                        intestino delgado). El látex también se utiliza en el tratamiento
+                        de la hidropesía y la inflamación del hígado y el bazo; es
+                        pegajosa y puede causar irritación en la piel, por lo que se
+                        recomienda usar guantes al manipularla; es toxica si se ingiere
+                        puede causar irritación bucal por lo que se recomienda su
+                        administración por personas o profesionales entendidos en la
+                        materia.
+                    </p>
+                    <img src="/public/marqay4.png" alt="Árbol La Castañita" class="h-auto w-auto mx-auto" />
+
+                    <p>El árbol de Renaco, tiene madera de bajo valor comercial, es
+                        utilizada como especie pionera en la restauración de bosques
+                        autóctonos, crece en áreas abiertas y de vegetación secundaria;
+                        y al proporcionar buena sombra, es usada en paisajismo. Su
+                        madera es de textura gruesa, grano recto, ligera, fácil de cortar,
+                        con malas propiedades mecánicas y muy susceptible a las
+                        termitas y la putrefacción. Solo se utiliza para artículos de bajo
+                        valor, como el relleno de puertas y paneles.</p>
+
+                    <p>
+                        El renaco, tiene especial importancia para la fauna silvestre
+                        pues proveen de abundantes frutos para aves, mamíferos y
+                        primates. Forma cavidades en su interior que sirven de hogar
+                        para numerosas especies de animales y es un elemento vital
+                        en el equilibrio de la selva.
+                    </p>
+                    <p>
+                        Además, es importante en Madre de Dios por su valor medicinal
+                        tradicional, ya que sus pueblos indígenas usan su corteza para
+                        tratar dolores de huesos, reumatismo y resfriados. También se
+                        valora como símbolo de prosperidad y su presencia en los
+                        hogares mejora el ambiente. Se le atribuyen poderes curativos y
+                        espirituales. Se cree que su presencia en el hogar purifica el aire
+                        y mejora la calidad del ambiente interior.
+                    </p>
+                    <img src="/public/marqay5.png" alt="Árbol La Castañita" class="h-auto w-auto mx-auto" />
+
+                    <p>
+                        <b>“El Marcay”</b>, al ser un árbol gigante cumple la función de “árbol
+                        abuelo” al compartir nutrientes e información a los demás
+                        árboles mediante redes subterráneas. La supervivencia de los
+                        árboles más jóvenes depende de estos árboles gigantes.
+                    </p>
+                    <p>
+                        Por otro lado, el avance de la deforestación por tala selectiva y
+                        posterior cambio de uso del suelo amenaza a estos ejemplares
+                        en la cuenca de la cuenca del rio Las Piedras. Cabe indicar que
+                        Las Piedras es el segundo distrito con mayor tasa de
+                        deforestación en la región de Madre de Dios (Geobosques,
+                        MINAM. Datos al 2020).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-gradient-to-b from-emerald-50 to-white">
+        <div class="container mx-auto max-w-6xl">
+
+            <!-- Título general -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-emerald-700 mb-4">“El Marqay”</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                    <strong>Ficus gomelleira Kunth y C.D. Bouché</strong> — árbol majestuoso,
+                    reconocido por su enorme tamaño y valor ecológico, considerado Árbol Patrimonial
+                    de la provincia de Tambopata.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+
+                <!-- Clasificación científica -->
+                <div
+                    class="bg-emerald-500 border border-emerald-200 rounded-3xl shadow-xl p-10 backdrop-blur-sm relative overflow-hidden">
+
+                    <!-- Decoración -->
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-emerald-200 rounded-full opacity-30"></div>
+                    <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-yellow-200 rounded-full opacity-30"></div>
+
+                    <h3 class="text-3xl font-semibold text-white mb-6">Clasificación científica</h3>
+
+                    <ul class="space-y-3 text-lg text-gray-100">
+                        <li><b>Reino:</b> Plantae</li>
+                        <li><b>División:</b> Magnoliophyta</li>
+                        <li><b>Clase:</b> Magnoliopsida</li>
+                        <li><b>Orden:</b> Rosales</li>
+                        <li><b>Familia:</b> Moraceae</li>
+                        <li><b>Tribu:</b> Ficeae</li>
+                        <li><b>Género:</b> Ficus</li>
+                        <li><b>Especie:</b> Ficus gomelleira</li>
+                    </ul>
+                </div>
+
+                <!-- Características -->
+                <div class="bg-white shadow-xl border border-gray-200 rounded-3xl p-10 leading-relaxed">
+                    <h3 class="text-3xl font-semibold text-emerald-700 mb-6">Características</h3>
+
+                    <p class="text-base leading-relaxed mb-4">
+                        “El Marqay” es un árbol de gran porte que destaca por su impresionante
+                        tamaño y por inspirar admiración en la zona. Presenta una altura aproximada de
+                        <strong>36 m</strong> y un <strong>DAP de 20 m</strong>, superando ampliamente
+                        las dimensiones habituales de su especie.
+                    </p>
+
+                    <p class="text-base leading-relaxed mb-4">
+                        Su nombre proviene del quechua, donde <strong>“Marqay”</strong> significa
+                        <strong>“el abrazador”</strong>, debido a que envuelve a otro árbol huésped,
+                        lo rodea por completo y finalmente lo sustituye, formando un renaco gigante.
+                    </p>
+
+                    <p class="text-base leading-relaxed mb-4">
+                        Esta especie —comúnmente conocida como <strong>Renaco</strong>— es típica de
+                        zonas húmedas e inundables de la Amazonía. Es valorada por su importancia
+                        ecológica, ya que provee frutos para aves, mamíferos y primates, además de
+                        ofrecer cavidades que sirven de refugio a numerosas especies.
+                    </p>
+
+                    <p class="text-base leading-relaxed">
+                        “El Marqay” se encuentra en la
+                        <strong>Concesión de Conservación El Bosque de ARBIO</strong>, en la cuenca
+                        del <strong>río Las Piedras</strong>, distrito de <strong>Las Piedras</strong>,
+                        provincia de <strong>Tambopata</strong>, departamento de
+                        <strong>Madre de Dios</strong>.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="pb-12 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-xl font-semibold text-emerald-700 mb-4 tracking-tight">
+                Fuentes
+            </h2>
+
+            <div class="border-l-4 border-emerald-600 pl-4 space-y-3 text-gray-700 text-sm leading-relaxed">
+
+                <p>
+                    <b>https://tropical.theferns.info/viewtropical.php?id=Ficus+gomelleira
+                    </b>
+                </p>
+
+                <p>
+                    <b>https://www.argentinat.org/taxa/904278-Ficus-gomelleira
+                    </b>
+                </p>
+
+                <p>
+                    <b>https://www.argentinat.org/taxa/904278-Ficus-gomelleira/browse_photos
+                    </b>
+                </p>
+                <p>
+                    <b>https://www.ecured.cu/Ficus_gomelleira
+
+                    </b>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="p-16 md:p-20 bg-emerald-700 text-white text-center">
+        <div class="container mx-auto max-w-4xl">
+
+            <h2 class="text-4xl md:text-4xl font-bold mb-6">Conservación y legado</h2>
+
+            <p class="text-md leading-relaxed opacity-95">
+                El reconocimiento de <strong>“El Marqay”</strong> refuerza la importancia de
+                <strong>proteger los árboles gigantes de la Amazonía</strong>, esenciales para el
+                equilibrio ecológico y el mantenimiento de la biodiversidad. Su presencia
+                inspira admiración y recuerda la necesidad de conservar los bosques de
+                Madre de Dios ante las crecientes amenazas de deforestación.
+            </p>
+
+            <p class="mt-8 text-base opacity-80">
+                <em>Ficus gomelleira Kunth y C.D. Bouché</em> — Patrimonio natural de Tambopata
+            </p>
+
+        </div>
+    </section>
+
+
+
 </body>
+
 </html>

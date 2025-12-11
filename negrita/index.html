@@ -1,11 +1,445 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/svg+xml" href="/public/logo-main.ico">
+    <title>Árbol Patrimonial "LA NEGRITA" | Municipalidad Provincial de Tambopata</title>
+    <meta name="description"
+        content="Árbol Patrimonial N° 003-2025-MPT-ARB.PAT. La castaña (Bertholletia excelsa), símbolo de identidad y orgullo de Madre de Dios.">
+
+    <!-- Tailwind + Flowbite -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+    <!-- Google Fonts: elegancia + selva -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to bottom, #f0fdf4, #dcfce7);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .dancing {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        /* Fondo hero con vida */
+        .hero {
+            background: linear-gradient(to bottom, rgba(5, 40, 15, 0.7), rgba(0, 80, 30, 0.9)),
+                url('/public/hero.jpg') center/cover no-repeat;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%234ade80" fill-opacity="0.15" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,170.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L0,320Z"></path></svg>') bottom/contain no-repeat;
+        }
+
+        .card-glow:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 25px 60px rgba(34, 197, 94, 0.25);
+        }
+
+        .leaf-deco {
+            position: absolute;
+            font-size: 6rem;
+            opacity: 0.1;
+            pointer-events: none;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+            }
+        }
+    </style>
 </head>
-<body>
-    NEGRITA
+
+<body class="text-gray-800 overflow-x-hidden">
+
+    <header class="hero relative text-white py-40 px-6 text-center overflow-hidden">
+        <div class="leaf-deco left-10 top-20">🍃</div>
+        <div class="leaf-deco right-20 top-40" style="animation-delay: 5s;">🍃</div>
+        <div class="leaf-deco left-32 top-80" style="animation-delay: 10s;">🍃</div>
+
+        <div class="relative z-10 container mx-auto max-w-7xl">
+            <p class="text-2xl md:text-3xl font-light tracking-widest text-emerald-200 mb-4">MUNICIPALIDAD PROVINCIAL DE
+                TAMBOPATA</p>
+            <h1 class="text-6xl md:text-9xl font-black leading-none mb-6">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-300">LA
+                    NEGRITA</span>
+            </h1>
+            <p class="text-4xl md:text-6xl dancing text-yellow-300 mb-6">Copaiba paupera (Herzog) Dwyer</p>
+            <p class="text-xl md:text-2xl max-w-4xl mx-auto opacity-95 leading-relaxed">
+                Especie vulnerable de la flora silvestre • Conservación y patrimonio natural
+            </p>
+
+            <div
+                class="mt-10 inline-block px-10 py-5 bg-gradient-to-r from-amber-500 to-yellow-600 text-black font-bold text-xl rounded-full shadow-2xl border-4 border-white/30">
+                Registro Patrimonial N° 010-2025-MPT-ARB.PAT
+            </div>
+
+            <div class="mt-8 flex justify-center gap-6 text-5xl">
+                <span class="animate-bounce">🌳</span>
+                <span class="animate-bounce delay-300">🌲</span>
+                <span class="animate-bounce delay-700">🌿</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-6 bg-white">
+        <div class="container mx-auto max-w-6xl text-justify">
+
+            <h2 class="text-5xl font-bold text-emerald-700 mb-6 text-center">
+                Reconocimiento de Árbol Patrimonial
+            </h2>
+            <h2 class="text-5xl font-bold text-emerald-700 mb-6 text-center">
+                "LA NEGRITA"
+            </h2>
+            <h2 class="text-xl font-bold text-emerald-700 mb-6 text-center">
+                (<em>Copaiba paupera (Herzog) Dwyer</em>)
+            </h2>
+            <p class="text-center leading-relaxed text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                Es patrimonial por ser una especie de flora silvestre amenazada,
+                categorizada <b>"vulnerable"</b> establecido mediante el Decreto Supremo N°
+                043-2006-AG.
+            </p>
+
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <!-- Dimensiones -->
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-emerald-700 mb-3">Dimensiones</h2>
+                    <dl class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">Altura</dt>
+                            <dd class="font-medium">7 m</dd>
+                        </div>
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">DAP</dt>
+                            <dd class="font-medium">30.24 cm</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <!-- Coordenadas UTM -->
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-emerald-700 mb-3">Coordenadas UTM</h2>
+                    <dl class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">Este (E)</dt>
+                            <dd class="font-medium" id="utm-east">480847</dd>
+                        </div>
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">Norte (N)</dt>
+                            <dd class="font-medium" id="utm-north">8607687</dd>
+                        </div>
+                        <div class="flex justify-between">
+                            <dt class="text-slate-600">Zona / Datum</dt>
+                            <dd class="font-medium text-slate-500">(no especificado)</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <!-- Ubicación -->
+                <div class="md:col-span-2 bg-white p-5 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-semibold text-emerald-700 mb-3">Ubicación</h2>
+
+                    <p class="text-sm text-slate-700 leading-relaxed">
+                        Ubicado en los <strong>jardines que dan hacia la esquina de las Av. Arequipa</strong>
+                        y el <strong>Jr. Daniel A. Carrión</strong> (frente al banco <strong>BCP</strong>)
+                        de la <strong>Plaza de Armas</strong> de la ciudad de
+                        <strong>Puerto Maldonado</strong>, distrito de <strong>Tambopata</strong>,
+                        provincia de <strong>Tambopata</strong>, departamento de
+                        <strong>Madre de Dios</strong>.
+                    </p>
+
+                    <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                        <p class="text-sm text-slate-500">
+                            Fecha de declaración:
+                            <span class="font-medium text-slate-700">Puerto Maldonado, 2025</span>
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <div class="">
+
+                <div class="leading-relaxed text-gray-700 space-y-5">
+                    <div class="float-left md:mr-4 mb-3 w-full md:w-[500px] space-y-2">
+                        <img src="/public/negrita1.png" alt="Árbol La Castañita"
+                            class="w-full h-[500px] rounded" />
+                        <p class="font-semibold text-xs text-center text-emerald-700">“La Negrita”, ejemplar de la especie Copaifera paupera. 
+                        </p>
+                    </div>
+                    <p>
+                        <b>"La negrita"</b>, es un ejemplar de la especie Copaiba paupera
+                        (Herzog) Dwyer, es crucial su conservación biológica debido a
+                        que es una especie de flora silvestre amenazada, categorizada
+                        "vulnerable" establecido mediante el Decreto Supremo N° 043
+                        2006-AG, debido a la sobreexplotación para la obtención de su
+                        madera de alta calidad y su valioso aceite de copaiba, utilizado
+                        con fines medicinales.
+                    </p>
+
+                    <p>
+                        Esta especie es comúnmente conocida como copaiba negra, el
+                        cual inspiró el nombre de LA NEGRITA, para ser reconocida
+                        fácilmente y diferenciada de la copaiba blanca (Copaifera
+                        reticulata Ducke).
+                    </p>
+
+                    <p>
+                        <b>“La negrita”</b>, se encuentra ubicada en los jardines que dan
+                        hacia la esquina de las Av. Arequipa y el Jr. Daniel A. Carrión
+                        (frente al banco BCP) de la Plaza de Armas de la ciudad de
+                        Puerto Maldonado, distrito de Tambopata, provincia de
+                        Tambopata, departamento de Madre de Dios.
+                    </p>
+
+                    <p>
+                        Gracias a este ejemplar conoceremos más de esta especie, así
+                        tenemos:
+                        La especie Copaifera paupera, comúnmente es conocida como
+                        copaiba, copaiba negra, matisihuati, palo de aceite, prospera en
+                        climas tropicales secos y húmedos, con precipitación pluvial de
+                        1 700 a 3 300 mm y temperatura promedio anual de 22 a 26ºC,
+                        en suelos generalmente areno-arcilloso. Habita en zonas altas y
+                        bajas de la selva. Tolerante a la sombra, es medianamente
+                        resistente a la inundación. Comparte su hábitat con las
+                        siguientes especies: uvilla, caimito, plátano, guayaba, yuca,
+                        pijuayo, kudzu, papaya, arazá, limón.
+
+                    </p>
+                    <p>
+                        La copiaba negra, en la Amazonía Peruana se encuentra en
+                        Loreto (Carretera lquitos-Nauta km 45 y, abundantemente, en el
+                        bajo Huallaga). En la Amazonía Brasileña se encuentra en la
+                        zona del río Acre. También se distribuye en la superficie total
+                        del departamento de Ucayali (Tahuania- Atalaya) y las
+                        superficies parciales de Huanuco, Junin y Pasco. Y en la
+                        Amazonia Suroriental, incluye las superficies parciales de los
+                        departamentos de Cuzco, Madre de Dios y Puno.
+                    </p>
+                    <img src="/public/negrita2.png" alt="Árbol La Castañita" class="h-auto w-auto mx-auto" />
+
+                    <p>
+                        <b>“La negrita”</b>, alcanza una altura de 7m. y un diámetro de
+                        30.24cm; según bibliografía un Árbol de esta especie mide de
+                        20 a 30 m de altura, de tronco recto, con copa globosa y amplia,
+                        puede alcanzar 30 m de alto, corteza rugosa, gris verdosa con
+                        lenticelas pequeñas parduzcas, con ramitas glabras. Hojas
+                        paripinnadas coriáceas, alternas, compuestas, presentan de 4
+                        a 5 pares de foliolos, pelúcidos punteados, densos y finamente
+                        reticulados;
+                        lustrosas
+                        en
+                        ambas caras, oblicuamente
+                        oblongaelípticas, redondeadas o agudas en la base,
+                        obtusamente acuminadas de 3 a 5 cm de largo y de 1 a 2 cm de
+                        ancho. Inflorescencia terminal racimosa, en panículas estrechas.
+                        Flores blancas, sésiles, olorosas, pequeñas, bisexuales, glabras
+                        por fuera y vellosas por dentro. Fruto legumbre bivalva
+                        dehiscente. Semillas de 1, 2 hasta 4 cubiertas por un arilo de
+                        vivo color anaranjado.
+                    </p>
+
+                    <p>La madera de la copiaba negra recién cortado presenta la albura
+                        de color beige y el duramen de color castaño rojizo con vetas
+                        oscuras observándose entre ambas capas un contraste de color.
+                        En la madera seca al aire la albura se toma de color blanco
+                        rosáceo y el duramen rojo amarillento con vetas oscuras
+                        aceitosas. Presenta un olor distintivo y agradable, brillo medio,
+                        grano recto, textura media a fina, veteado en arcos
+                        superpuestos. Es una madera pesada, es relativamente fácil de
+                        aserrar y de buena trabajabilidad al labrado, es de secado
+                        natural moderadamente lento, durabilidad natural de baja a
+                        media resistente al ataque biológico, la madera húmeda tiene
+                        resistencia al ataque biológico.</p>
+                                            <img src="/public/negrita3.png" alt="Árbol La Castañita" class="h-auto w-auto mx-auto" />
+
+                    <p>
+                        La madera de copaiba negra se puede utilizar para vigas,
+                        columnas, machihembrados, muebles y objetos torneados; útil
+                        en carpintería, pisos, revestimiento de interiores, parquet,
+                        contrachapado, elaboración de cajas, molduras, encofrados y
+                        laminados. Se puede utilizar para fabricar tableros de articulas
+                        y tableros madera-cemento.
+                    </p>
+
+                    <p>El aceite de copaiba negra se usa para infecciones respiratorias
+                        y gastrointestinales, herpes labial y estimulante del sistema
+                        inmune, también ayuda a desinflamar el cuerpo.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-gradient-to-b from-emerald-50 to-white">
+        <div class="container mx-auto max-w-6xl">
+
+            <!-- Título general -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-emerald-700 mb-4">“La Negrita”</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                    <strong>Copaiba paupera (Herzog) Dwyer</strong> — especie de flora silvestre
+                    amenazada y categorizada como <strong>“Vulnerable”</strong> según el Decreto Supremo
+                    N° 043-2006-AG. Reconocida como Árbol Patrimonial por su valor ecológico y por ser
+                    representativa de la Amazonía Suroriental.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+
+                <!-- Clasificación científica -->
+                <div
+                    class="bg-emerald-500 border border-emerald-200 rounded-3xl shadow-xl p-10 backdrop-blur-sm relative overflow-hidden">
+
+                    <!-- Decoración -->
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-emerald-200 rounded-full opacity-30"></div>
+                    <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-yellow-200 rounded-full opacity-30"></div>
+
+                    <h3 class="text-3xl font-semibold text-white mb-6">Clasificación científica</h3>
+
+                    <ul class="space-y-3 text-lg text-gray-100">
+                        <li><b>Reino:</b> Plantae</li>
+                        <li><b>División:</b> Magnoliophyta</li>
+                        <li><b>Clase:</b> Magnoliopsida</li>
+                        <li><b>Orden:</b> Fabales</li>
+                        <li><b>Familia:</b> Fabaceae</li>
+                        <li><b>Subfamilia:</b> Caesalpinioideae</li>
+                        <li><b>Tribu:</b> Detarieae</li>
+                        <li><b>Género:</b> Copaifera</li>
+                        <li><b>Especie:</b> Copaifera paupera</li>
+                    </ul>
+                </div>
+
+                <!-- Características -->
+                <div class="bg-white shadow-xl border border-gray-200 rounded-3xl p-10 leading-relaxed">
+                    <h3 class="text-3xl font-semibold text-emerald-700 mb-6">Características</h3>
+
+                    <p class="text-base leading-relaxed mb-4">
+                        “La Negrita” es un ejemplar de <strong>Copaiba paupera</strong>, conocido por la
+                        población como <strong>copaiba negra</strong>. Alcanza una altura aproximada de
+                        <strong>7 m</strong> y presenta un <strong>DAP de 30.24 cm</strong>.
+                    </p>
+
+                    <p class="text-base leading-relaxed mb-4">
+                        Esta especie es apreciada por su valiosa madera y especialmente por su aceite de
+                        copaiba, ampliamente utilizado con fines medicinales. Debido a la
+                        sobreexplotación, ha sido categorizada como <strong>“Vulnerable”</strong> mediante
+                        el Decreto Supremo N° 043-2006-AG.
+                    </p>
+
+                    <p class="text-base leading-relaxed mb-4">
+                        Es una especie propia de la Amazonía, habitando zonas tanto altas como bajas,
+                        tolerante a la sombra y resistente a inundaciones moderadas. Comparte su entorno
+                        con especies como uvilla, caimito, plátano, guayaba, yuca, papaya, arazá y
+                        pijuayo.
+                    </p>
+
+                    <p class="text-base leading-relaxed">
+                        “La Negrita” se encuentra ubicada en los <strong>jardines que dan hacia la esquina
+                            de las Av. Arequipa</strong> y el <strong>Jr. Daniel A. Carrión</strong> (frente al
+                        banco <strong>BCP</strong>) en la <strong>Plaza de Armas de Puerto Maldonado</strong>,
+                        distrito y provincia de <strong>Tambopata</strong>, departamento de
+                        <strong>Madre de Dios</strong>.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="pb-12 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-xl font-semibold text-emerald-700 mb-4 tracking-tight">
+                Fuentes
+            </h2>
+
+            <div class="border-l-4 border-emerald-600 pl-4 space-y-3 text-gray-700 text-sm leading-relaxed">
+
+                <p>
+                    <b>-https://es.wikipedia.org/wiki/Copaifera_paupera
+                    </b>
+                </p>
+
+                <p>
+                    <b>-http://www.iiap.org.pe/upload/publicacion/CDinvestigacion/iiap/iiap2/CapituloIII
+                        13.htm#TopOfPage
+                    </b>
+                </p>
+                <p>
+                    <b>-https://mexico.inaturalist.org/taxa/139407-Copaifera-paupera
+                    </b>
+                </p>
+                <p>
+                    <b>-https://es.scribd.com/doc/273480644/COPAIBA-PAUPERAhttps://www.ecured.cu/Ficus_gomelleira
+                    </b>
+                </p>
+                <p>
+                    <b>-https://www.yauvanaperu.com/productos/extractos-y-capsulas-naturales/aceite-de
+                        copaiba/
+                    </b>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+<section class="p-16 md:p-20 bg-emerald-700 text-white text-center">
+
+    <!-- Luces decorativas -->
+    <div class="absolute -top-20 -left-20 w-72 h-72 bg-emerald-400/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-300/10 rounded-full blur-3xl"></div>
+
+    <div class="relative container mx-auto max-w-4xl text-center">
+
+        <h2 class="text-4xl md:text-4xl font-bold mb-6 tracking-tight">
+            Conservación y legado
+        </h2>
+
+        <p class="text-md leading-relaxed opacity-95 max-w-3xl mx-auto">
+            <strong>“La Negrita”</strong> es un ejemplar de 
+            <strong>Copaiba paupera</strong>, reconocido por su valor ecológico y por ser una 
+            <strong>especie vulnerable</strong>. Su preservación promueve el cuidado de la flora 
+            amazónica y el respeto por el patrimonio natural de Madre de Dios.
+        </p>
+
+        <p class="mt-8 text-base opacity-80 italic">
+            <em>Copaiba paupera (Herzog) Dwyer</em> — Patrimonio natural de Madre de Dios
+        </p>
+
+    </div>
+</section>
+
+
 </body>
+
 </html>
